@@ -22,3 +22,4 @@ file. Use this then in the Path.get brackets. The Path gives you also the chance
 This ain't that necessary, just a chance to learn something new and improve your knowledge.  
 
 That was my small Project of developing an ASCII Font Generator. Hope my article was helpful enough.
+:joy: 
