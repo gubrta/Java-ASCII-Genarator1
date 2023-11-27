@@ -17,8 +17,16 @@ public class Main {
             String asciiArt = FigletFont.convertOneLine(font.toFile(), input);
             System.out.println(asciiArt);
 
-            Path path = Path.of("C:\\Users\\agu\\Documents\\out.txt");
+            String userDirectory = System.getProperty("user.dir");
+            Path path = Path.of(userDirectory+"\\out.txt");
             Path filePath = Files.writeString(path,asciiArt);
+
+            String SavePath = scanner.nextLine();
+            if ("JA".equals(SavePath)){
+                SavePath = (userDirectory+"\\out.txt");
+            }else{
+                System.out.println("Anderen Speicherort suchen");
+            }
         }
     }
 }
